@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    background-color: rgba(172, 47, 255, 0.295);
+}
+
+nav{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.main{
+    display: grid;
+    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px 300px;
+    
+    grid-gap: 10px;
+}
+
+.item1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-image: url(/multimedia/gatitos.png);
+    background-size: cover;
+    background-position: center;
+}
+.item2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.item3{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.nosotros{
+    text-align: left;
+    margin: 5px;
+    border: auto;
+    padding: 30px;
+}
+
+div p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.encabezado{
+    background-color: aliceblue;
+    background-image: url(./Multimedia/perri.jpg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+h1{
+    color: rgb(172, 47, 255);
+    font-weight: 150;
+    font-style: italic;
+    font-size: 60px;
+    text-decoration: underline red;
+}
+
+h2{
+    color: rgb(162, 0, 255);
+    font-weight: 4px;
+    font-style: normal;
+    font-size: 45px;
+    text-decoration: underline blueviolet;
+}
+
+footer{
+    background-color: rgb(172, 47, 255);
+    border: 15px solid red;
+    border-style: groove;
+    border-color: grey;
+    border-width: 15px;
+    
+    
+    width: auto;
+    margin: 5px;
+    margin-bottom: 0px;
+    padding: 5px;
+    bottom: 10px;
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px){
+    .main{
+        grid-template-rows: auto;
+    }
+}
