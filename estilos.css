@@ -38,7 +38,7 @@ nav{
 .item1{
     grid-column: 1/2;
     grid-row: 1/3;
-    background-image: url(/multimedia/gatitos.png);
+    background-image: url(./multimedia/gatitos.png);
     animation: ease-in animat 1s ;
     
     background-size: cover;
