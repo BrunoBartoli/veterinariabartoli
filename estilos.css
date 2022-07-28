@@ -11,7 +11,7 @@ body{
 
 nav a:hover{
     background-color: violet;
-    transition: 1.25s;
+    transition: 1s;
     
 }
 
