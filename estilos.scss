@@ -22,11 +22,12 @@ nav a:hover{
 
 
 nav{
-    background-image: linear-gradient(to right, #6dc4d1, #47adcd, #2e94c7, #3579bc, #4c5ca8);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    background-image: radial-gradient(circle, #a12470, #ba2c5b, #c74245, #c95d2f, #c2791b);
+    
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: space-evenly;
 
 }
 
@@ -111,21 +112,21 @@ h2{
 
 footer{
     background-color: $color1;
-    border: 10px solid red;
-    border-style: groove;
-    border-color: grey;
-    border-width: 15px;
-    
-    
-    width: auto;
-    margin: 5px;
-    margin-bottom: 0px;
-    padding: 5px;
-    bottom: 10px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 20px;
 
     position: relative;
     display: flex;
     justify-content: space-between;
+        div i:hover{
+            color: black;
+            cursor: pointer;
+            transform: translateY(-20px);
+            transition: all 0.7s;
+        }
 }
 
 @media screen and (max-width: 1200px){
