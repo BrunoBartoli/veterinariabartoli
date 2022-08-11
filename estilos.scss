@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -10,25 +11,22 @@ $color1: rgb(172, 47, 255);
 
 body{
     text-align: center;
-    font-family: 'Indie Flower', cursive;
-    background-image: linear-gradient(to right top, #a30048, #b62f61, #c94c7b, #db6696, #ec80b0);
-}
-
-nav a:hover{
-    background-color: violet;
-    transition: 1s;
+    background-image: linear-gradient(to right, #ffffff, #fbfbfd, #f8f6fb, #f5f2f9, #f3edf6, #ede4f1, #e8dbec, #e3d2e7, #d9c2df, #cfb3d8, #c4a4d0, #b995c9);
     
 }
+
+
 
 
 nav{
     background-image: radial-gradient(circle, #a12470, #ba2c5b, #c74245, #c95d2f, #c2791b);
-    
-    // display: flex;
-    // flex-direction: row;
-    // flex-wrap: wrap;
-    // justify-content: space-evenly;
-
+        a:hover{
+            background-color: grey;
+            transform: translateY(-20px);
+            // transform: translateX(-20px);
+            transition: 1s;
+            
+        }
 }
 
 .main{
@@ -44,13 +42,13 @@ nav{
     grid-column: 1/2;
     grid-row: 1/3;
     background-image: url(./multimedia/gatitos.png);
-    animation: ease-in animat 1s ;
+    animation: ease-in gatito 1.2s ;
     
     background-size: cover;
     background-position: center;
 }
 
-@keyframes animat{
+@keyframes gatito{
     0%{
         transform: scale(0);
     }100%{
@@ -86,7 +84,7 @@ section p{
 
 .encabezado{
     background-color: aliceblue;
-    background-image: url(./multimedia/perri.jpg.jpg);
+    background-image: linear-gradient(to right, #ffffff, #fbfbfd, #f8f6fb, #f5f2f9, #f3edf6, #ede4f1, #e8dbec, #e3d2e7, #d9c2df, #cfb3d8, #c4a4d0, #b995c9);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -96,14 +94,14 @@ section p{
 h1{
     color: $color1;
     font-weight: 150;
-    font-style: italic;
     font-size: 60px;
     text-decoration: underline red;
+    text-shadow: 3px 3px 3px grey;
 }
 
 h2{
     color: $color1;
-    font-weight: 4px;
+    font-weight: 3px;
     font-style: normal;
     font-size: 45px;
     text-decoration: underline blueviolet;
@@ -120,6 +118,7 @@ footer{
 
     position: relative;
     display: flex;
+    
     justify-content: space-between;
         div i:hover{
             color: black;
@@ -132,5 +131,16 @@ footer{
 @media screen and (max-width: 1200px){
     .main{
         grid-template-rows: auto;
+    }
+    h1{
+        font-size: 35px;
+        font-weight: 100;
+    }
+    h2{
+        font-size: 20px;
+    }
+    footer{
+        font-size: 16px;
+        padding: 10px;
     }
 }
