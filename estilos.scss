@@ -11,21 +11,26 @@ $color1: rgb(172, 47, 255);
 
 body{
     text-align: center;
-    background-image: linear-gradient(to right, #ffffff, #fbfbfd, #f8f6fb, #f5f2f9, #f3edf6, #ede4f1, #e8dbec, #e3d2e7, #d9c2df, #cfb3d8, #c4a4d0, #b995c9);
+    background-image: linear-gradient(to right, #e3caeb, #dbc1e3, #d3b8db, #cbafd3, #c3a6cb);
     
 }
 
 
-
+.galeria{
+    height: 30%;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px #999;
+    border-radius: 1.5%;
+}
 
 nav{
-    background-image: radial-gradient(circle, #a12470, #ba2c5b, #c74245, #c95d2f, #c2791b);
+    background-image: linear-gradient(to right, #ba78cd, #a565b9, #9051a6, #7b3f93, #672c81);
         a:hover{
-            background-color: grey;
-            transform: translateY(-20px);
-            // transform: translateX(-20px);
+            color: rgba(62, 36, 87, 0.815);
+            background-color: violet;
+            transform: translateY(-10px);
             transition: 1s;
-            
         }
 }
 
@@ -36,6 +41,7 @@ nav{
     grid-template-rows: 300px 300px;
     
     grid-gap: 10px;
+
 }
 
 .item1{
@@ -46,6 +52,8 @@ nav{
     
     background-size: cover;
     background-position: center;
+    border-radius: 1.5%;
+    box-shadow: 5px 5px 5px #999;
 }
 
 @keyframes gatito{
@@ -59,10 +67,16 @@ nav{
 .item2{
     grid-column: 2/3;
     grid-row: 1/2;
+    background-color: #b995c9;
+    border-radius: 1.5%;
+    box-shadow: 5px 5px 5px #999;
 }
 .item3{
     grid-column: 2/3;
     grid-row: 2/3;
+    background-color: #b995c9;
+    border-radius: 1.5%;
+    box-shadow: 5px 5px 5px #999;
 }
 
 .nosotros{
@@ -70,6 +84,9 @@ nav{
     margin: 5px;
     border: auto;
     padding: 30px;
+    background-color: #b995c9;
+    border-radius: 1.5%;
+    box-shadow: 5px 5px 5px #999;
 }
 
 div p{
@@ -84,7 +101,7 @@ section p{
 
 .encabezado{
     background-color: aliceblue;
-    background-image: linear-gradient(to right, #ffffff, #fbfbfd, #f8f6fb, #f5f2f9, #f3edf6, #ede4f1, #e8dbec, #e3d2e7, #d9c2df, #cfb3d8, #c4a4d0, #b995c9);
+    background-image: linear-gradient(to right, #e3caeb, #dbc1e3, #d3b8db, #cbafd3, #c3a6cb);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -92,24 +109,24 @@ section p{
 }
 
 h1{
-    color: $color1;
+    color: rgba(62, 36, 87, 0.815);
     font-weight: 150;
     font-size: 60px;
-    text-decoration: underline red;
+    text-decoration: underline rgba(62, 36, 87, 0.815);
     text-shadow: 3px 3px 3px grey;
 }
 
 h2{
-    color: $color1;
+    color: rgba(62, 36, 87, 0.815);
     font-weight: 3px;
     font-style: normal;
     font-size: 45px;
-    text-decoration: underline blueviolet;
+    text-decoration: underline rgba(62, 36, 87, 0.815);
     text-shadow: 3px 3px 3px gray;
 }
 
 footer{
-    background-color: $color1;
+    background-image: linear-gradient(to right, #ba78cd, #a565b9, #9051a6, #7b3f93, #672c81);
     color: white;
     text-align: center;
     font-size: 25px;
